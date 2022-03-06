@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ #main_div{
+    height: 100vh;
+    width: 100%;
+    background: url("Image/ian-dooley-DJ7bWa-Gwks-unsplash.jpg") no-repeat center ;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(242, 99, 247);
+    z-index: 0;
+  position: relative;
+}
+nav a{
+    color: rgb(240, 239, 239);
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    font-size: 30px;
+    left: 15%;
+}
+nav img{
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    cursor: pointer;
+}
+.contentBox{
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content2{
+    width: 30%;
+    line-height: 20px;
+}
+.content2 p{
+    color: rgb(293, 16, 22);
+   font-size: 20px;
+}
+.content2 h2{
+    color: rgb(233, 16, 13);
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.content2 i{
+    color: rgb(233, 16, 13);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.content h1{
+color: rgb(233, 13, 13);
+font-weight: 300;
+font-size: 40px;
+}
+.sideBar{
+    
+    height: 100%;
+    width: 20%;
+    background-color: rgb(83, 79, 75);
+    z-index: 1;
+    position: fixed;
+    top: 1px;
+    max-width: 0;
+    
+}
+.sideBar-width{
+    transition: max-width 0.5 ease-in-out;
+    max-width: 20%;
+}
+.sideBar i{
+    position: absolute;
+    right: 0;
+    margin-left: 90%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:480px){
+    nav a{
+        font-size: 28px;
+        left: 20px;
+    }
+    
+    .contentBox{
+        padding-top: 50%;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content h1{
+        color: #ffffff;
+    }
+    .content2 {
+        width: 100%;
+        
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .content2 p{
+        color: #ffffff;
+    }
+    .content2 i ,h2{
+        color: black;
+    }
+}
